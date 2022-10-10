@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+        }
+        main>div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation-name:move ;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-iteration-count: 2;
+            animation-timing-function: linear;
+            animation-fill-mode:both ;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes move{
+            0%{
+               transform: translate(100px,0px); 
+            }
+            30%{
+                transform: translateX(1150px);  
+            }
+            100%{
+                transform: translate(1150px,300px);
+            }
+            /* 100%{
+                transform: translate(0);
+            }   */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+    </main>
+    
+</body>
+</html>

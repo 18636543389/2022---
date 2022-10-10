@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 300px;
+            height: 600px;
+            display: flex;
+            position: relative;
+        }
+        div{
+            margin: 150px auto;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 3px solid black;
+        }
+        div:nth-child(1){
+            transform:
+         skewX(-15deg) ;
+         position: absolute;
+         top: 0;
+         left: -50px;
+         
+        }
+        div:nth-child(2){
+            transform: skew(-15deg);
+            background-color: aliceblue;
+            border: none;
+           
+        }
+        div:nth-child(3){
+            transform:
+         skewX(15deg);
+         position: absolute;
+         top: 0;
+         right: -100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>  </div>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+</html>

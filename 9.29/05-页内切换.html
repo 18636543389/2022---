@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1:target{
+            background-color: red;
+            display: block;    
+        }
+        #box2:target{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            display: block;    
+        }
+        #box3:target{
+            color: red;
+            font-style: 40px;
+            display: block;    
+        }
+        main{
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid black;
+            position: relative;
+        }
+        div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="#box1">点击改变目标元素box1</a>
+        <a href="#box2">点击改变目标元素box2</a>
+        <a href="#box3">点击改变目标元素box3</a>
+    </p>
+    <main>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </main>
+</body>
+</html>

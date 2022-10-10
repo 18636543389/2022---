@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+      
+        #box2{
+            
+            display: none;
+        }
+        #box2:target{
+            display: block;
+        }
+        #box2:target + #box1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="box2">
+            <p>
+                <a href="#box1">box1</a>
+                <a href="#box2">box2</a>
+            </p>
+            <h2>box2</h2>
+        </div>
+        <div id="box1">
+            <p>
+                <a href="#box1">box1</a>
+                <a href="#box2">box2</a>
+            </p>
+            <h2>box1</h2>
+        </div>
+    </main>
+</body>
+</html>

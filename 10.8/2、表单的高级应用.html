@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" novalidate id="form1">
+        <p>
+            <input type="time">
+            <input type="date">
+        </p>
+        <p>
+            <input type="datetime-local">
+        </p>
+        <p>
+            <input type="week">
+        </p>
+        <p>
+            <input type="month">
+        </p>
+        <p>
+            <input type="email" value="1@qq.com">
+        </p>
+        <p>
+            <input type="tel" maxlength="11" minlength="11">
+        </p>
+        <p>
+            <input type="range" step="99">
+        </p>
+        <p>
+            <input type="hidden" >
+        </p>
+        <p>
+            <input type="image" src="./10.jpg" style="width:100px;
+            height: 100px;">
+        </p>
+        <p>
+            <input type="color">
+        </p>
+        <p>
+            <select name="city" id="" multiple>
+                <optgroup label="向往的城市">
+                    <option value="杭州">杭州</option>
+                    <option value="扬州">扬州</option>
+                    <option value="徐州">徐州</option>
+                </optgroup>
+                <optgroup label="美食" size="5">
+                    <option value="杭州西湖醋鱼">杭州西湖醋鱼</option>
+                    <option value="扬州炒饭">扬州炒饭</option>
+                    <option value="徐州月亮馍">徐州月亮馍</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+         <strong>选择果汁的尺寸:
+         </strong>
+         <fieldset>
+                <legend>选择尺寸
+                </legend>
+                <label for="big">大杯:</label>
+                <input type="radio" id="big" name="size" checked ><br>
+                <label for="medium">中杯: </label>
+                <input type="radio" id="medium" name="size" ><br>
+                <label for="small">小杯:</label>
+                <input type="radio" id="small" name="size"><br>
+        </fieldset>
+        </p>
+        <p>
+            <label for="search">
+                关键字搜索；
+            </label>
+            <input type="text" id="search" list="searchHistory">
+
+            <datalist id="searchHistory">
+                <option value="HTML5"></option>
+                <option value="CSS"></option>
+                <option value="JavaScript"></option>
+                <option value="Node.js"></option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="提交" form="from1">
+        </p>
+    </form>
+</body>
+</html>

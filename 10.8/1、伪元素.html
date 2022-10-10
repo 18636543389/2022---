@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=e`dge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+		
+        div,section{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 10px;
+        }
+      
+        div::after{
+            content: "";
+            width: 0px;
+            border-top: 20px transparent solid;
+            border-right: 20px transparent solid;
+            border-left: 20px transparent solid;
+            border-bottom: 20px red solid;
+        }
+        section::before{
+            content: "这是之前元素";
+        }
+    </style>
+</head>
+<body>
+    <div>  
+    </div>
+    <section>这是一个section标签</section>
+</body>
+</html>

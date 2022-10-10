@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        form{
+            /* width: 100%;
+            height: 100%; */
+            width: 500px;
+            margin: 100px 500px auto;
+            text-align:left;
+            /* float: left; */
+        }
+
+        span{
+            font-size: 16px;
+            color: #f00;
+            font-family: Tahoma;
+            vertical-align: middle;
+             margin-right: 2px;
+            font-weight: 400;
+        }
+        div{
+            font-size: 10px;
+             display: inline;
+            margin-left: 8px;
+            color: #FF7F00;
+            height: 30px;
+            line-height: 30px;
+        }
+        li {
+          
+            text-align: left;
+            display: list-item;
+             text-align: -webkit-match-parent;
+        }
+        #q{
+            color: aliceblue;
+            text-align:center;
+            background-color: orange;
+            border:0 ;
+        }
+        a {  
+            font-size: 10px;
+            width: 500px;
+            color: #07f;
+            text-decoration: none;
+            outline: 0;
+        }
+        p{
+            /* height: 100%;
+            width: 100%;
+           background-color: orange; */
+           text-align:center;
+        }
+       .S{
+        
+            color: #f00;
+       }
+       .A,.C{
+            color: #999;
+       }
+       .lay-hd{
+        margin: 0;
+       
+        line-height: 30px;
+        color: #e5f8ff;
+        padding-left: 20px;
+        font-size: 14px;
+        position: relative;
+        background-color: #07f;
+       }
+    </style>
+</head>
+<body>
+   
+    <section> 
+       
+    <form action="" >
+         <li type="none" class="lay-hd">账户信息</li>
+        <li type="none">
+            <span class="required">*</span> 用户名:
+            <input type="text" placeholder="用户名设置成功后不可修改"> 
+            <div> 6-30位字母、数字或”_",字母开头</div>
+        </li>
+        <li  type="none" >
+            <span class="required">*</span> 
+            登录密码 
+            <input type="password" placeholder="6-20位字母、数字或符号">
+            <span class="S"></span>
+            <span class="A"></span>
+            <span class="C"></span>   
+        </li>
+        <li  type="none">
+            <span class="required">*</span> 
+            确认密码:
+            <input type="password" placeholder="再次输入您的登录密码"></li>
+        <li  type="none">
+            <span class="required">*</span> 
+            证件类型: 
+            <select name="" id="">
+                <option value="">中国居民身份证</option>
+                <option value="">港澳台居民居住证</option>
+                <option value="">港澳居民来往内地通行证</option>
+                <option value="">护照</option>
+                <option value="">外国人永久居留身份证</option>
+
+            </select>
+        </li>
+        <li  type="none">
+            <span class="required">*</span> 
+            姓名:
+            <input type="text" placeholder="请输入姓名"><div>姓名填写规则（用于身份核验，请正确填写)</div> 
+        </li>
+        <li  type="none">
+            <span class="required">*</span> 
+            证件号码
+            <input type="text" placeholder="请输入您的证件号码">
+            <div>(用于身份核验,请正确填写）</div> 
+        </li>
+        <li  type="none">
+            <span class="required">*</span> 
+            旅客类型:
+            <select name="" id="">
+                <option value="">成人</option>
+                <option value="">儿童</option>
+                <option value="">学生</option>
+                <option value="">残疾军人、伤残人民警察</option>
+            </select>
+        </li>
+        <hr>
+        <li  type="none"> <span class="required">   </span>    邮箱:
+            <input type="text">
+        </li>
+        <li  type="none">
+            <span class="required">*</span> 
+            手机号码(+86)
+            <input type="text">
+        </li>
+        <li  type="none" >
+            <input type="radio" name="" required checked> 我已阅读并同意遵守
+             <a href="https://kyfw.12306.cn/otn/gonggao/privacyPolicy_web.html;jsessionid=D173CD00091DB4445FA6F8D6189D1C7D">《中国铁路客户服务中心网站服务条款》《隐私权政策》</a>
+        </li>
+        <p >
+            <input id="q"  type="submit" value="下一步" style=" background-color:orange 0 ; " >
+        </p>
+    </form>
+ </section>
+</body>
+</html>

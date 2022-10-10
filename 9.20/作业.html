@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            margin: 0 100px;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 0% 0.5px;
+            display: inline-block;
+        }
+        section{
+            width: 200px;
+        }
+        p:nth-child(3){
+            color: red;
+        }
+        p:nth-child(6){
+            color: pink;
+        }
+        section:nth-of-type(2){
+            color: plum;
+        }
+        div>section{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <span style="float:left ;">
+        <div style="float: left; background:aquamarine ;"> </div>
+        <div style="float: left; background:pink ;"></div>
+        <div style="float: left; background:red ;"></div>
+        <div style="float: left; background:pink ;"></div>
+        <div style="float: left; background:aquamarine ;"></div>
+        <div style="float: left; background:pink ;"></div>
+    </span>
+    <section>这是第一个section标签 </section>
+    <p>这是第一个p标签</p>
+    <p>这是第二个p标签</p>
+    <section>这是第二个section标签</section>
+    <p>这是第三个p标签</p>
+    <div>
+        <section>这是在div中的section标签</section></div>
+    </div>
+</body>
+</html>

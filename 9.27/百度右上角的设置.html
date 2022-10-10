@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度右上角的设置</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style:none ;
+        }
+        div{
+            position: relative;
+        }
+        div>span{
+            padding: 20px;
+            display: inline-block;
+            margin-left: 100px;
+            position: relative;
+        }
+        ul{
+            background-color: #fff;
+            width: 100px;
+            text-align: center;
+            position: absolute;
+            top: 52;
+            left: 85px;
+            display: none;
+        }
+        div>span:hover + ul{
+            display: block;
+        }
+        ul:hover {
+            display: block;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>设置</span>
+        <ul>
+            <li>搜索设置</li>
+            <li>高级搜索</li>
+            <li>关闭预测</li>
+            <li>隐私设置</li>
+            <li>关闭热搜</li>
+        </ul>
+    </div>
+</body>
+</html>

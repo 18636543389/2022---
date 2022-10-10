@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button:hover{
+            color: aqua;
+        }
+        div{
+            /* display: none; */
+            visibility: hidden;
+        }
+        button:hover + div{
+            /* display: none; */
+            /* display: block; */
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <button >按钮</button>
+    <div>这是一个div标签</div>
+</body>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style:none ;
+            
+        }
+        li{
+            list-style: none; 
+            float: left;
+            margin-right: 24px; 
+            margin-top: 19px; 
+        }
+        div{
+            text-align: center;
+            background: #fff;
+            
+        }
+        a{
+            float: left;
+            text-decoration: none;
+            color: #bbb;
+             text-align: center;
+             list-style: none; 
+             margin-right: 24px; 
+            margin-top: 19px; 
+            margin-left: 2px;
+            /* display: inline-block; */
+            
+        }
+        ul{
+            margin: 0 17px;
+            text-align: center; 
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        span{
+            float: left;
+            text-decoration: none;
+            color: #bbb;
+             text-align: center;
+             list-style: none; 
+             margin-right: 24px; 
+            margin-top: 19px; 
+            position: relative;
+        }
+        p{
+            display: none;
+            position: relative;
+            top: -300px;
+            right: -400px;
+        }
+        span:hover + div>p{
+            display: block;
+        }
+        div>p:hover{
+            display: block;
+        }
+        a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="">关于百度</a></li>
+            <li><a href="">About Baidu</a></li>
+            <li><a href="">使用百度前必读</a></li>
+            <li><a href="">帮助中心</a></li>
+            <li><a href="">企业推广</a></li>
+            <li><a href="">京公网安备11000002000001号</a></li>
+            <li><a href="">京ICP证030173号</a></li>
+            <li><a href="">信息网络传播视听节目许可证 0110516</a></li>
+            <li>
+                <span>^</span>
+                <div>
+             <p>About Baidu</p>
+             <p>信息网络传播视听节目许可证0110516</p>
+             <p>互联网宗教信息服务许可证编号:京(2022)0000043</p>
+             <p>药品医疗器械网络信息服务备案(京)网药械信息备字(2021)第00159号</p>
+             <p>医疗器械网络交易服务第三方平台备案凭证(京）网械平台备字(2020)第00002号c2022 Baidu</p> 
+             <p>大局药经好”透老化</p>
+            </div>
+            </li>
+           
+        </ul>
+    </div>
+</body>
+</html>

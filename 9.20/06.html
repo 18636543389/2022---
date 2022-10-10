@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section:first-of-type{
+            color:red ;
+        }
+        section:last-of-type{
+            color:blue ;
+        }
+        section:nth-of-type(2){
+         color: aqua;   
+        }
+        section:not(.last){
+            color: yellow;
+        }
+        li:first-child{
+            color: red;
+        }
+        li:nth-child(2){
+            color: aqua;
+        }
+        li:last-child{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <section>111</section>
+            <span> 2</span>
+            <div>
+                <span>3</span>
+            </div>
+            <section>555555</section>
+            <section class="last">44</section>
+        </div>
+    </div>
+    <ul>
+        <li>1</li>
+        <!-- <div>
+            
+        </div> -->
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
